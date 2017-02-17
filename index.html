@@ -18,9 +18,13 @@
 </body>
 <script>
 
+    function delayedInnerHTML(newContent) {
+        output.innerHTML += newContent;
+    }
+
     function report(newContent) {
         var output = document.getElementById('output');
-        output.innerHTML += newContent;
+        setTimeout(function() { delayedInnerHTML(newContent) }, 100);
     }
 
     function start() {
