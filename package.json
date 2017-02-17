@@ -1,0 +1,23 @@
+{
+  "name": "TinkeringTouches",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/davidmgilo/TinkeringTouches.git"
+  },
+  "keywords": [],
+  "author": "David <davidmgilo@gmail.com> (https://github.com/davidmgilo)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/davidmgilo/TinkeringTouches/issues"
+  },
+  "homepage": "https://github.com/davidmgilo/TinkeringTouches#readme",
+  "dependencies": {
+    "hammerjs": "^2.0.8"
+  }
+}
