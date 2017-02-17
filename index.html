@@ -9,25 +9,32 @@
 </head>
 <body>
 
+<output id="output"></output>
+
 <canvas id="canvas" width="800" height="800"></canvas>
 
 </body>
 <script>
 
+    function report(newContent) {
+        var output = document.getElementById('output');
+        output.innerHTML += newContent;
+    }
+
     function start() {
-        console.log('start');
+        report('start');
     }
 
     function end() {
-        console.log('end');
+        report('end');
     }
 
     function move() {
-        console.log('move');
+        report('move');
     }
 
     function init() {
-        var canvas = this.getElementById('canvas');
+        var canvas = document.getElementById('canvas');
 
         canvas.addEventListener('touchstart', start(), false);
         canvas.addEventListener('touchend', end(), false);
