@@ -19,7 +19,6 @@
 <script>
 
     function report(newContent) {
-        var output = document.getElementById('output');
         output.innerHTML += newContent;
     }
 
@@ -37,6 +36,8 @@
 
     function init() {
         var canvas = document.getElementById('canvas');
+        var output = document.getElementById('output');
+
 
         canvas.addEventListener('touchstart', start(), false);
         canvas.addEventListener('touchend', end(), false);
@@ -44,6 +45,7 @@
     }
 
     init();
+
 
 </script>
 </html>
